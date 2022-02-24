@@ -1,5 +1,10 @@
 <Welcome>:
-    BoxLayout:
-        Button:
-            text: 'Авторизоваться'
-            on_press: root.login()
+   FloatLayout:
+       orientation: 'vertical'
+       padding:100
+       spacing:100
+       Button:
+          text: "Авторизоваться"
+          pos: 400, 100
+          size_hint: 0.3 ,None
+          pos_hint:{"center_x":0.5, "top":0.5} 
