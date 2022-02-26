@@ -1,10 +1,20 @@
 <Welcome>:
-   FloatLayout:
-       orientation: 'vertical'
-       padding:100
-       spacing:100
-       Button:
-          text: "Авторизоваться"
-          pos: 400, 100
-          size_hint: 0.3 ,None
-          pos_hint:{"center_x":0.5, "top":0.5} 
+    FloatLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+        canvas.before:
+            Color:
+                rgba: 100, 100, 100, 1
+            Rectangle:
+                size: self.size
+                pos: self.pos
+        orientation: 'vertical'
+        padding:100
+        spacing:100
+        Button:
+            text: "Авторизоваться"
+            pos: 400, 100
+            size_hint: 0.6 ,None
+            pos_hint:{"center_x":0.5, "top":0.6}
+            on_press: root.login()
